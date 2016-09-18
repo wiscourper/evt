@@ -1,6 +1,3 @@
-### evt
-
-```
 var evt = (function(){
 	var _this = {};
 	var _cid = 1;
@@ -40,39 +37,3 @@ var evt = (function(){
 
 	return _this;
 })()
-```
-
-### demo
-```
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-	<p>hello, evt!</p>
-	<button>button</button>
-	<script type="text/javascript" src="evt.js"></script>
-	<script type="text/javascript">
-		var p = document.querySelector('p');
-		var btn = document.querySelector('button');
-		var i = 1;
-
-		evt.on('hello', p, function(){
-			p.innerHTML = 'hello, evt!'+(i++);
-		})
-
-		evt.one('hi', p, function(e){
-			console.log('hi, evt!', e);
-		})
-
-		evt.on('click', btn, function(e){
-			console.log(e)
-			if(i > 3) evt.off('hello', p)
-			evt.fire('hello', p)
-			evt.fire('hi', p)
-		})
-	</script>
-</body>
-</html>
-```

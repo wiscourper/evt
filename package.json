@@ -1,0 +1,24 @@
+{
+  "name": "evt",
+  "version": "1.0.0",
+  "description": "..",
+  "main": "evt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kongge/evt.git"
+  },
+  "keywords": [
+    "evt",
+    "event",
+    "observer"
+  ],
+  "author": "kongge",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kongge/evt/issues"
+  },
+  "homepage": "https://github.com/kongge/evt#readme"
+}
